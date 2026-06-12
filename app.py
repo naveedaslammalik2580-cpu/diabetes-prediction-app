@@ -160,10 +160,10 @@ elif page == "Make Prediction":
         
         with col1:
             if prediction[0] == 0:
-                st.success("✅ **PREDICTION: No Diabetes**", icon="✓")
+                st.success("✅ **PREDICTION: No Diabetes**")
                 st.metric("Confidence", f"{probability[0][0]*100:.2f}%")
             else:
-                st.error("⚠️ **PREDICTION: Diabetes Risk Detected**", icon="✗")
+                st.error("⚠️ **PREDICTION: Diabetes Risk Detected**")
                 st.metric("Confidence", f"{probability[0][1]*100:.2f}%")
         
         with col2:
